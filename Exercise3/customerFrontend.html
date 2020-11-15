@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Exercise3 -- Web Store</h1><br>
+    <form name="from" method="post" action="customerBackend.php" onsubmit="return itemCheck();">
+        <div id="shopList">
+            <h2>Clothes list</h2><br>
+
+            <div id="Tshirt">
+                <h3>T-shirt</h3>
+                <blockquote>
+                    <p id="bt">blue-Tshirt $4.99</p>
+                    <input type="number" id="btn"> <br>
+                    <p id="rt">red-Tshirt $5.99</p>
+                    <input type="number" id="rtn"> <br>
+                </blockquote>
+            </div>
+            <div id="pants">
+                <h3>Pants</h3>
+                <blockquote>
+                    <p id="bp">blue-pants $10.99</p>
+                    <input type="number" id="bpn"> <br>
+                    <p id="rp">red-pants $11.99</p>
+                    <input type="number" id="rpn"> <br>
+                </blockquote>
+            </div>
+        </div>
+        <br><br><br>
+        <h2>Login your account</h2>
+        <div id="login">
+            <p>User Name(must be a email type eg: abc@xxx.com): </p>
+            <input type="text" id="userID" value=""><br>
+            <p>Password: </p>
+            <input type="password" id="password" value=""><br><br>
+        </div>
+
+        <div id="shipping">
+            <h2>Choose your shipping method</h2>
+            <input type="radio" name="shipping" value="free">Free 7 day <br>
+            <input type="radio" name="shipping" value="overNight">$50.00 over night<br>
+            <input type="radio" name="shipping" value="threeDay">$5.00 three day<br><br>
+            <input type="submit" value="Submit"><br>
+        </div>
+
+        <div id="reset">
+            <h3>Or you can reset your Choise</h3>
+            <input type="submit" value="reset" onclick="reset()"><br>
+        </div>
+    </form>
+    <script type="text/javascript" src="formChecker.js"></script>
+
+</body>
+
+</html>
